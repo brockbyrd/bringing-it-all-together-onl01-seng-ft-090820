@@ -29,11 +29,13 @@ class Dog
   end
 
   def save
-
+    
   end
 
-  def self.create
-
+  def self.create(name, breed)
+    new_dog = Dog.new
+    new_dog.save
+    new_dog
   end
 
   def self.new_from_db
